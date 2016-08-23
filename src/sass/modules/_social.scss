@@ -1,0 +1,18 @@
+.social{
+	height: 100%;
+	float: right;
+	margin-top: 23px;
+	&__item{
+		padding: 0 10px;
+		display: inline-block;
+		font-size: 35px;
+		&-link{
+			color: $baseColor;
+			text-decoration: none;
+			opacity: .7;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

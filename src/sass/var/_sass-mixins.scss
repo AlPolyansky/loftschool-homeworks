@@ -1,0 +1,7 @@
+@function fonts( $font, $type:$regular, $kind:"" ){
+	@return $font + "-" + $type + $kind;
+}
+
+@mixin line($color:red){
+	outline: 1px solid $color;
+}

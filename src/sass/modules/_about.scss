@@ -1,0 +1,38 @@
+.about{
+	margin-top: 46px;
+	min-height: 473px;
+	@extend .clear;
+	&__item{
+		float: left;
+		width: 50%;
+		padding: 0 20px;
+		&-svg{
+			width: 140px;
+			height: 140px;
+			float: left;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+			margin-right: 20px;
+			clear: left;
+		}
+		&-title{
+			font-family: fonts($main_font);
+			margin-bottom: 20px;
+			display: block;
+		}
+		&-text{
+			font-family: fonts($main_font,$light);
+			overflow: hidden;
+			line-height: 21px;
+		}
+
+	}
+}
+
+.svg-hello{
+	background-image: url("../img/hello.svg");
+}
+.svg-exp{
+	background-image: url("../img/experience.svg");
+}

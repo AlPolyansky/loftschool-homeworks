@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* SASS*/
 /* Fonts */
 /* Colors */
@@ -7,45 +6,11 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "SocialFont";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+.clear:after, .content-bgi:after, .about:after, .clear:before, .content-bgi:before, .about:before {
+  content: '';
+  display: table;
+  clear: both; }
 
-.icon-sk:before {
-  content: '\e801'; }
-
-/* '' */
-.icon-vk:before {
-  content: '\e802'; }
-
-/* '' */
-.icon-git:before {
-  content: '\e804'; }
-
-/* '' */
 /* Base */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -164,6 +129,9 @@ body {
   font-family: "FiraSans-Regular";
   font-size: 16px; }
 
+a {
+  color: #03a9f4; }
+
 .wrapper {
   position: relative;
   min-height: 100%; }
@@ -240,6 +208,13 @@ body {
   position: relative;
   padding-bottom: 200px; }
 
+.content-wrap {
+  width: 960px;
+  margin: 0 auto; }
+
+.content-bgi {
+  background-image: url("../img/gplaypattern.png"); }
+
 .footer {
   height: 72px;
   width: 100%;
@@ -255,3 +230,60 @@ body {
   .footer__text {
     opacity: .5;
     text-align: center; }
+
+.title {
+  text-align: center;
+  font-family: "FiraSans-Medium";
+  font-size: 42px;
+  padding-top: 76px;
+  display: block;
+  margin-bottom: 21px; }
+
+.title-after {
+  text-align: center;
+  margin-bottom: 45px;
+  opacity: .7; }
+
+.about {
+  margin-top: 46px;
+  min-height: 473px; }
+  .about__item {
+    float: left;
+    width: 50%;
+    padding: 0 20px; }
+    .about__item-svg {
+      width: 140px;
+      height: 140px;
+      float: left;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      margin-right: 20px;
+      clear: left; }
+    .about__item-title {
+      font-family: "FiraSans-Regular";
+      margin-bottom: 20px;
+      display: block; }
+    .about__item-text {
+      font-family: "FiraSans-Light";
+      overflow: hidden;
+      line-height: 21px; }
+
+.svg-hello {
+  background-image: url("../img/hello.svg"); }
+
+.svg-exp {
+  background-image: url("../img/experience.svg"); }
+
+.courses {
+  background-image: url("../img/gplaypattern.png"); }
+  .courses__item {
+    max-width: 33.33333%;
+    float: left;
+    outline: 1px solid red; }
+    .courses__item-body {
+      padding: 20px; }
+    .courses__item-img {
+      width: 100%; }
+    .courses__item-title {
+      font-size: 21px; }

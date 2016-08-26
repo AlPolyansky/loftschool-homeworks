@@ -1,6 +1,7 @@
 .about{
 	margin-top: 46px;
 	min-height: 473px;
+	background-color: $baseColor;
 	@extend .clear;
 	&__item{
 		float: left;
